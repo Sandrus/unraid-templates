@@ -9,7 +9,7 @@
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
 
-  <Icon>https://raw.githubusercontent.com/Sandrus/unraid-templates/main/icons/gaps2.svg</Icon>
+  <Icon>https://raw.githubusercontent.com/Sandrus/unraid-templates/main/icons/gaps2.png</Icon>
 
   <WebUI>http://[IP]:[PORT:4277]</WebUI>
 
