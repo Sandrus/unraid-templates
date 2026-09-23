@@ -9,47 +9,47 @@
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
 
-  <Support>https://github.com/primetime43/GAPS-2/issues</Support>
-  <Project>https://github.com/primetime43/GAPS-2</Project>
-  <GitHub>https://github.com/primetime43/GAPS-2</GitHub>
-
-  <Overview>
-GAPS 2 finds movies and TV shows missing from your Plex, Jellyfin, or Emby libraries.
-It can detect incomplete collections and franchises, integrate with Radarr and Sonarr,
-and send notifications through Discord, Telegram, or Email.
-  </Overview>
-
-  <Category>MediaApp:Other</Category>
+  <Icon>https://raw.githubusercontent.com/Sandrus/unraid-templates/main/icons/gaps2.svg</Icon>
 
   <WebUI>http://[IP]:[PORT:4277]</WebUI>
 
-  <Icon>https://raw.githubusercontent.com/TON_USER/TON_REPO/main/icons/gaps2.png</Icon>
+  <Overview>GAPS 2 finds movies and TV shows missing from your Plex, Jellyfin, or Emby libraries. It can detect incomplete collections and franchises, integrate with Radarr and Sonarr, and send notifications through Discord, Telegram, or Email.</Overview>
 
-  <TemplateURL>https://raw.githubusercontent.com/TON_USER/TON_REPO/main/templates/gaps2.xml</TemplateURL>
+  <Support>https://github.com/primetime43/GAPS-2/issues</Support>
+  <Project>https://github.com/primetime43/GAPS-2</Project>
+
+  <TemplateURL>https://raw.githubusercontent.com/Sandrus/unraid-templates/main/templates/gaps2.xml</TemplateURL>
+
+  <ReadMe>https://github.com/primetime43/GAPS-2</ReadMe>
+
+  <Category>MediaApp:Other</Category>
+
+  <ExtraSearchTerms>gaps plex jellyfin emby radarr sonarr missing movies collections franchises</ExtraSearchTerms>
+
+  <Requires>A Plex, Jellyfin, or Emby server. Internet access is required for metadata lookups.</Requires>
+
+  <License>GPLv3</License>
 
   <Config
     Name="WebUI"
     Target="4277"
     Default="4277"
     Mode="tcp"
-    Description="GAPS 2 Web interface"
+    Description="HTTP port for the GAPS 2 WebUI."
     Type="Port"
     Display="always"
     Required="true"
-    Mask="false">
-    4277
-  </Config>
+    Mask="false"/>
 
   <Config
     Name="Appdata"
     Target="/app/data"
     Default="/mnt/user/appdata/gaps2"
     Mode="rw"
-    Description="Persistent GAPS 2 configuration and data"
+    Description="Persistent GAPS 2 configuration and application data."
     Type="Path"
     Display="always"
     Required="true"
-    Mask="false">
-    /mnt/user/appdata/gaps2
-  </Config>
+    Mask="false"/>
+
 </Container>
