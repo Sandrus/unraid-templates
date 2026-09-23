@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>GAPS 2</Name>
+
+  <Repository>primetime43/gaps-2:latest</Repository>
+  <Registry>https://hub.docker.com/r/primetime43/gaps-2</Registry>
+
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+
+  <Support>https://github.com/primetime43/GAPS-2/issues</Support>
+  <Project>https://github.com/primetime43/GAPS-2</Project>
+  <GitHub>https://github.com/primetime43/GAPS-2</GitHub>
+
+  <Overview>
+GAPS 2 finds movies and TV shows missing from your Plex, Jellyfin, or Emby libraries.
+It can detect incomplete collections and franchises, integrate with Radarr and Sonarr,
+and send notifications through Discord, Telegram, or Email.
+  </Overview>
+
+  <Category>MediaApp:Other</Category>
+
+  <WebUI>http://[IP]:[PORT:4277]</WebUI>
+
+  <Icon>https://raw.githubusercontent.com/TON_USER/TON_REPO/main/icons/gaps2.png</Icon>
+
+  <TemplateURL>https://raw.githubusercontent.com/TON_USER/TON_REPO/main/templates/gaps2.xml</TemplateURL>
+
+  <Config
+    Name="WebUI"
+    Target="4277"
+    Default="4277"
+    Mode="tcp"
+    Description="GAPS 2 Web interface"
+    Type="Port"
+    Display="always"
+    Required="true"
+    Mask="false">
+    4277
+  </Config>
+
+  <Config
+    Name="Appdata"
+    Target="/app/data"
+    Default="/mnt/user/appdata/gaps2"
+    Mode="rw"
+    Description="Persistent GAPS 2 configuration and data"
+    Type="Path"
+    Display="always"
+    Required="true"
+    Mask="false">
+    /mnt/user/appdata/gaps2
+  </Config>
+</Container>
