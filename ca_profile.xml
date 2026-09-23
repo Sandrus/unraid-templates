@@ -1,7 +1,7 @@
 <CommunityApplications>
   <!-- Required profile -->
   <Profile>
-    Trying to build unRaid apps i want to use or try that are not available. Not an expert, so my bad if it's not done by the rule.
+  Unraid Community Applications templates for apps I use or want to try that are not yet available in Community Apps.
   </Profile>
   <!-- Optional icon -->
   <Icon>https://raw.githubusercontent.com/Sandrus/unraid-templates/main/icon.svg</Icon>
