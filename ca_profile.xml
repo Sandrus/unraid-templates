@@ -4,7 +4,7 @@
     Trying to build unRaid apps i want to use or try that are not available. Not an expert, so my bad if it's not done by the rule.
   </Profile>
   <!-- Optional icon -->
-  <Icon>https://github.com/Sandrus/unraid-templates/main/icon.svg</Icon>
+  <Icon>https://raw.githubusercontent.com/Sandrus/unraid-templates/main/icon.svg</Icon>
   <!-- Optional web page -->
   <WebPage>https://github.com/Sandrus/unraid-templates</WebPage>
   <!-- Optional support and donation links -->
